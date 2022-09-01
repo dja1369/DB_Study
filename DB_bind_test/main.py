@@ -1,10 +1,10 @@
 import pymysql
 
 def counect():
-    conn = pymysql.connect(host='10.170.1.241', 
+    conn = pymysql.connect(host='0.0.0.0', 
                            user='root', 
-                           passwd='ctipwd1', 
-                           db='siem', 
+                           passwd='root', 
+                           db='test', 
                            charset='utf8' )
     global cur
     cur = conn.cursor()
