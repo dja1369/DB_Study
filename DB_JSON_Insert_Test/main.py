@@ -17,7 +17,7 @@ def counect():
 
 
 def insert_json_label(conn):
-    with open('E:/Work/CTMX/ai_siem_v2_Bk/SP-ENGINE/DB/label_19.json', encoding= 'utf-8') as json_file:
+    with open('path', encoding= 'utf-8') as json_file:
         json_line = json.load(json_file) # JSON의 Key값으로 접근
         label_name = json_line['label_id']
         output_file = json_line['outputFile']
@@ -38,7 +38,7 @@ def insert_json_label(conn):
 
 
 def insert_json_preproecess(conn): 
-    with open('E:/Work/CTMX/ai_siem_v2_Bk/SP-ENGINE/DB/pre_1.json', encoding= 'utf-8') as json_file:
+    with open('path', encoding= 'utf-8') as json_file:
         json_line = json.load(json_file) # JSON의 Key값으로 접근
         # json_line = json_data # JSON 객체를 가지는 배열
         pre_name = json_line['pre_id']
@@ -66,7 +66,7 @@ def insert_json_preproecess(conn):
         conn.commit()
             
 def insert_json_model(conn):
-    with open('E:/Work/CTMX/ai_siem_v2_Bk/SP-ENGINE/DB/model_1.json', encoding= 'utf-8') as json_file:
+    with open('path', encoding= 'utf-8') as json_file:
         json_line = json.load(json_file) # JSON의 Key값으로 접근
         model_name = json_line['model_id']
         learning_file = json_line['learning_file']
